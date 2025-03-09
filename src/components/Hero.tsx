@@ -15,7 +15,7 @@ const Hero = () => {
           className="object-cover w-full h-full"
         >
           <source
-            src="https://storage.googleapis.com/arca-lab/background-tech.mp4"
+            src="https://waagacusub.com/uploads/video/clip/VIDEO_15CF8F-C01636-C356E1-293114-AE8235-D3E7C8.mp4"
             type="video/mp4"
           />
         </video>
