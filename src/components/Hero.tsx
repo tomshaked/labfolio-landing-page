@@ -14,7 +14,7 @@ const Hero = () => {
           className="object-cover w-full h-full"
         >
           <source
-            src="https://www.theconstruct.ai/wp-content/uploads/2023/09/web-video-background-training-final-version.mp4"
+            src="https://cdn.sanity.io/files/z5s3oquj/production/958ffbdcaafa889bad0744af57731fae11db69a8.mp4"
             type="video/mp4"
           />
         </video>
