@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Section from './Section';
 import Button from './Button';
@@ -13,14 +12,21 @@ const ContactSection = () => {
         </p>
         
         <div className="glass-panel p-8 md:p-12 rounded-lg animate-fade-in">
-          <form className="space-y-6">
+          {/* Form integrated with Formspree */}
+          <form
+            action="https://formspree.io/f/mdkenreg" // Your Formspree form endpoint
+            method="POST"
+            className="space-y-6"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="block text-sm font-medium text-foreground/80">Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name" // Add name attribute to match Formspree fields
                   className="w-full px-4 py-2 bg-secondary/50 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  required
                 />
               </div>
               <div className="space-y-2">
@@ -28,7 +34,9 @@ const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email" // Add name attribute to match Formspree fields
                   className="w-full px-4 py-2 bg-secondary/50 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  required
                 />
               </div>
             </div>
@@ -38,6 +46,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 id="subject"
+                name="subject" // Add name attribute to match Formspree fields
                 className="w-full px-4 py-2 bg-secondary/50 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/40"
               />
             </div>
@@ -46,13 +55,15 @@ const ContactSection = () => {
               <label htmlFor="message" className="block text-sm font-medium text-foreground/80">Message</label>
               <textarea
                 id="message"
+                name="message" // Add name attribute to match Formspree fields
                 rows={4}
                 className="w-full px-4 py-2 bg-secondary/50 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/40"
+                required
               ></textarea>
             </div>
             
             <div className="flex justify-center">
-              <Button size="lg">Send Message</Button>
+              <Button size="lg" type="submit">Send Message</Button>
             </div>
           </form>
         </div>
