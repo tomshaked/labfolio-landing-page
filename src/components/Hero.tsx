@@ -35,8 +35,8 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg">Explore Research</Button>
-            <Button variant="outline" size="lg">Join Our Team</Button>
+            <Button size="lg" as="a" href="#research">Explore Research</Button>
+            <Button variant="outline" size="lg" as="a" href="#contact">Join Our Team</Button>
           </div>
         </div>
       </div>
