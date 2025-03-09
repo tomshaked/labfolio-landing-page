@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
@@ -31,9 +30,12 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <NavLinks />
-          <Button variant="outline" size="sm">
-            Contact
-          </Button>
+          {/* Link the contact button to the contact section */}
+          <a href="#contact">
+            <Button variant="outline" size="sm">
+              Contact
+            </Button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -51,9 +53,12 @@ const Header = () => {
         <div className="fixed inset-0 top-[60px] z-40 bg-background/95 backdrop-blur-sm md:hidden">
           <nav className="flex flex-col items-center justify-center h-full space-y-8 p-8 animate-fade-in">
             <NavLinks mobile onClick={() => setIsMobileMenuOpen(false)} />
-            <Button variant="outline" onClick={() => setIsMobileMenuOpen(false)}>
-              Contact
-            </Button>
+            {/* Link the contact button to the contact section */}
+            <a href="#contact">
+              <Button variant="outline" onClick={() => setIsMobileMenuOpen(false)}>
+                Contact
+              </Button>
+            </a>
           </nav>
         </div>
       )}
