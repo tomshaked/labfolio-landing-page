@@ -14,7 +14,7 @@ const Hero = () => {
           className="object-cover w-full h-full"
         >
           <source
-            src="https://waagacusub.com/uploads/video/clip/VIDEO_15CF8F-C01636-C356E1-293114-AE8235-D3E7C8.mp4"
+            src="https://www.theconstruct.ai/wp-content/uploads/2023/09/web-video-background-training-final-version.mp4"
             type="video/mp4"
           />
         </video>
